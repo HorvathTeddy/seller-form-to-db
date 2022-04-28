@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CS 328 Assignment 6.1</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Manager Page"
+    />
+
+    <link rel="stylesheet" href="architect.css" />
+    <link rel="stylesheet" href="manager.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="architect.html">Seller</a>
+        <a href="manager.html">Manager</a>
+      </nav>
+    </header>
+
+    <div id="page_container">
+      <form>
+        <h3>Receive Queries for a Specific Date</h3>
+        <label>
+          From:
+          <input type="date" id="begin-date" required />
+        </label>
+        <label>
+          To:
+          <input type="date" id="end-date" required />
+        </label>
+        <input type="submit" id="submit-btn" value="submit-value" />
+      </form>
+
+      <table id="arch-form-table"></table>
+    </div>
+
+    <footer>
+      <p>&copy; Theodore Horvath </p>
+    </footer>
+
+    <script type="module" src="manager.js"></script>
+  </body>
+</html>
