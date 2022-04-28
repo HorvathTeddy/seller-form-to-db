@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Building Buyer Form </title>
+  <link rel="stylesheet" href="buyer.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyer Information Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Contact Information</div>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Full name</span>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Mobile Number</span>
+          <input type="text" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Office Number</span>
+          <input type="text" placeholder="Enter your office number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Home Address</span>
+          <input type="text" placeholder="Enter your home address" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Office Address</span>
+          <input type="text" placeholder="Enter your office address" required>
+        </div>
+      </div>
+      <div class="budget-details">
+        <input type="radio" name="budget" id="dot-1">
+        <input type="radio" name="budget" id="dot-2">
+        <input type="radio" name="budget" id="dot-3">
+        <input type="radio" name="budget" id="dot-4">
+        <span class="budget-title">Budget Information</span>
+        <div class="category">
+          <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="budget">$200K-1.2M</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot one"></span>
+            <span class="budget">$1.2M-2.2M</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot one"></span>
+            <span class="budget">$2.2M-3.2M</span>
+          </label>
+          <label for="dot-4">
+            <span class="dot one"></span>
+            <span class="budget">$3.2M+</span>
+          </label>
+        </div>
+        <div class="input-box">
+          <span class="details"> Zip Code</span>
+          <input type="text" placeholder="Enter your zip code of interest">
+        </div>
+        <div class="input-box">
+          <span class="details"> Radius Outside of Zip Code</span>
+          <input type="text" placeholder="Enter radius outside of zipcode to search">
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
