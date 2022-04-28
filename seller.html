@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Architect Seller Form | Buy My Buildings </title>
+  <link rel="stylesheet" href="architect.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./manager.html">Manager</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="title">Contact Information</div>
+    <h3>Architect Seller Form</h3>
+    <form action="submit.php" method="POST">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Full name</span>
+          <input type="text" placeholder="Enter your name" name="fullName" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your email" name="email" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Mobile Number</span>
+          <input type="text" placeholder="Enter your mobile number" name="mobileNumber" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Office Number</span>
+          <input type="text" placeholder="Enter your office number" name="officeNumber" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Home Address</span>
+          <input type="text" placeholder="Enter your home address" name="homeAddress" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Office Address</span>
+          <input type="text" placeholder="Enter your office address" name="officeAddress" required>
+        </div>
+      </div>
+      <div class="building-details">
+        <span class="building-title">Building Information</span><br>
+        <input type="radio" id="residential" name="building" value="Residential" id="R">
+        <label for="residential">Residential</label><br>
+        <input type="radio" id="business" name="building" value="Business" id="B">
+        <label for = "business">Business</label><br>
+        <input type="radio" id="mercantile" name="building" value="Mercantile" id="M">
+        <label for="mercantile">Mercantile</label><br>
+        <input type="radio" id="storage" name="building" value="Storage" id="S">
+        <label for="storage">Storage</label><br>
+        
+        <div class="input-box">
+          <span class="details"> Building Height</span>
+          <input type="text" placeholder="Enter the height of your building" name="buildingHeight">
+        </div>
+        <div class="input-box">
+          <span class="details"> Number of rooms in building</span>
+          <input type="text" placeholder="Enter number of rooms in building" name="buildingRooms">
+        </div>
+        <div class="input-box">
+          <span class="details"> Square Feet</span>
+          <input type="text" placeholder="Enter the square feet" name="squareFeet">
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="submit" name="submitButton">
+      </div>
+    </form>
+  </div>
+  <div>
+    <a href="table.php">Create | Clear Table</a> <br>
+    <a href="disp_table.php">Show Table</a><br>
+
+  </div>
+
+  <footer> 
+    <p> Theodore Horvath </p>
+  </footer>
+  
+</body>
+</html>
